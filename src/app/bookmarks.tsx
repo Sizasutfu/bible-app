@@ -66,12 +66,12 @@ export default function BookmarksScreen() {
                       pressed && { opacity: 0.6 },
                     ]}
                     onPress={() =>
-                      router.push(`/read/${b.bookId}/${b.chapter}`)
+                       router.push(`/read/${b.bookId}/${b.chapter}?verse=${b.verse}`)
                     }
                   >
                     <Text style={styles.reference}>{reference}</Text>
                     <Text style={styles.snippet} numberOfLines={2}>
-                      {b.text}
+                       {b.text}
                     </Text>
                   </Pressable>
                   <Pressable
